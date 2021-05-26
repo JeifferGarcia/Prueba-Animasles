@@ -17,11 +17,16 @@ const score = () => {
   return countScore;
 };
 
+const  newScore = async ()=>{
+  if
+}
+
 let newScore = score();
 
 const SelectAnimal = (event) => {
   let a = Animals();
   let e = event.target.alt;
+
   if (e == a) {
     console.log("animal correcto");
     Countdown();

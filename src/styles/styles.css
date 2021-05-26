@@ -53,7 +53,6 @@ button {
   background-color: #5a106e;
   margin-top: 0.6em;
   color: white;
-  font-weight: ;
   border: none;
   padding: 0.5em;
   cursor: pointer;
@@ -95,17 +94,17 @@ button {
 }
 
 .grid__item:nth-child(4) > img {
-  width: 500px;
+  width: 350px;
   position: realative;
   top: 10px;
 }
 
 .grid__item:nth-child(5) > img {
-  width: 90px;
+  width: 70px;
 }
 
 .grid__item:nth-child(6) > img {
-  width: 90px;
+  width: 70px;
 }
 .grid__item:nth-child(7) > img {
   width: 200px;
@@ -144,6 +143,16 @@ button {
 .grid__item:nth-child(8) {
   grid-area: 2/6;
   align-self: flex-start;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid__item:nth-child(1) > img {
+    width: 200px;
+  }
+
+  .grid__item:nth-child(2) > img {
+    width: 150px;
+  }
 }
 
 @media screen and (max-width: 812px) {
