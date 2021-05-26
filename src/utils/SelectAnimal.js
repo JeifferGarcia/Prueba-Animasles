@@ -1,37 +1,16 @@
+import { getAnimal } from "./Animals.js";
 import Animals from "./Animals.js";
 import Countdown from "./Countdown.js";
-
-const app = document.getElementById("app");
-const constainerScore = document.createElement("div");
-constainerScore.classList = "score";
-
-const score = () => {
-  let saveScore = 100;
-
-  const countScore = (score) => {
-    saveScore -= score;
-    app.append(constainerScore);
-    console.log(`Score: ${saveScore}`);
-    constainerScore.innerHTML = `Score: ${saveScore}`;
-  };
-  return countScore;
-};
-
-const  newScore = async ()=>{
-  if
-}
-
-let newScore = score();
+import Random from "./Random.js";
 
 const SelectAnimal = (event) => {
-  let a = Animals();
+  let a = getAnimal;
   let e = event.target.alt;
 
-  if (e == a) {
+  if (e === a) {
     console.log("animal correcto");
+    Animals();
     Countdown();
-  } else {
-    newScore(10);
   }
 };
 

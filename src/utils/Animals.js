@@ -1,6 +1,3 @@
-import Random from "./Random.js";
-
-let aleatorio = Random(0, 7);
 const Animals = () => {
   const animales = [
     "burro",
@@ -12,12 +9,15 @@ const Animals = () => {
     "conejo",
     "cabra",
   ];
+  let aleat = parseInt(Math.random() * 8);
 
-  if (aleatorio === aleatorio) {
-    Random(0, 7);
+  function res(a, b) {
+    return a - b;
   }
 
-  return animales[aleatorio];
+  return animales[res(animales.length, aleat)];
 };
+
+export let getAnimal = Animals();
 
 export default Animals;
